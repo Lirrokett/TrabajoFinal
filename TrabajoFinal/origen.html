@@ -3,25 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Grupo 2 | 2. Origen y contextualización</title>
+  <title>Proyecto TCG | 2. Origen</title>
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
 <header>
   <div class="container">
     <nav class="navbar">
-      <div class="brand"><a href="index.html">Grupo 2</a></div>
+      <div class="brand"><a href="index.html">SISTEMA GESTIÓN TCG</a></div>
       <div class="nav-actions">
         <a class="btn" href="index.html">Inicio</a>
-        <div class="dropdown">
-          <button id="menuBtn" class="btn">Menú ▾</button>
-          <div id="menuPanel" class="dropdown-panel">
-            <a href="introduccion.html">1. Introducción</a>
-            <a href="origen.html">2. Origen y contextualización</a>
-            <a href="objetivo-general.html">3. Objetivo general</a>
-            <a href="objetivos-especificos.html">4. Objetivos específicos</a>
-          </div>
-        </div>
       </div>
     </nav>
   </div>
@@ -29,10 +20,10 @@
 <main>
   <div class="container">
     <section class="card">
-      <h1>2. Origen y contextualización del proyecto</h1>
-      <p>Al trabajar en un entorno con una cantidad masiva de datos y categorías (Magic, Pokémon, etc.), es vital una organización técnica que evite errores de stock. Por ello, se plantea una aplicación que automatiza las tareas operativas más pesadas[cite: 48, 55, 58].</p>
+      <h1>2. Origen y Contextualización</h1>
+      <p>La génesis de este proyecto reside en la necesidad de escalar los procesos de negocio dentro de un entorno altamente complejo como es el coleccionismo de cartas (Magic, Pokémon, Yu-Gi-Oh!). La disparidad de criterios en la clasificación de rarezas y la alta frecuencia de transacciones exigían una base de datos relacional normalizada y eficiente.</p>
       
-      <p>El proyecto se contextualiza en una <strong>arquitectura cliente-servidor</strong> utilizando <strong>JPA (Java Persistence API)</strong> para la persistencia. Esto permite que el registro de cada compra quede vinculado de forma permanente a un usuario y una fecha específica, facilitando auditorías y seguimientos legales de las ventas[cite: 1, 12, 14]. Por otro lado, la aplicación gestiona la logística interna, permitiendo transformar activos (como abrir cajas para obtener sobres) manteniendo la coherencia en la base de datos relacional[cite: 92, 94, 95].</p>
+      <p>Técnicamente, el sistema se fundamenta en el estándar de persistencia <strong>JPA (Java Persistence API)</strong>, lo que garantiza una gestión de datos escalable y segura. El contexto operativo se sitúa en un modelo híbrido: la aplicación permite la logística interna (reposición y apertura de stock) mientras ofrece una fachada comercial transparente para el cliente final, vinculando cada transacción a un historial auditable y un perfil de usuario único.</p>
     </section>
   </div>
 </main>
