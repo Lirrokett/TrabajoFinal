@@ -3,25 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Grupo 2 | 4. Objetivos específicos</title>
+  <title>Proyecto TCG | 4. Objetivos Específicos</title>
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
 <header>
   <div class="container">
     <nav class="navbar">
-      <div class="brand"><a href="index.html">Grupo 2</a></div>
+      <div class="brand"><a href="index.html">SISTEMA GESTIÓN TCG</a></div>
       <div class="nav-actions">
         <a class="btn" href="index.html">Inicio</a>
-        <div class="dropdown">
-          <button id="menuBtn" class="btn">Menú ▾</button>
-          <div id="menuPanel" class="dropdown-panel">
-            <a href="introduccion.html">1. Introducción</a>
-            <a href="origen.html">2. Origen y contextualización</a>
-            <a href="objetivo-general.html">3. Objetivo general</a>
-            <a href="objetivos-especificos.html">4. Objetivos específicos</a>
-          </div>
-        </div>
       </div>
     </nav>
   </div>
@@ -29,15 +20,15 @@
 <main>
   <div class="container">
     <section class="card">
-      <h1>4. Objetivos específicos</h1>
-      <p>Nuestro proyecto se basa en una base de datos relacional con una interfaz gráfica intuitiva desarrollada en <strong>JavaFX</strong>[cite: 1, 31, 48]. En la aplicación existen dos niveles de acceso diferenciados:</p>
+      <h1>4. Objetivos Específicos</h1>
+      <p>Para garantizar el éxito del sistema, se han definido los siguientes pilares de desarrollo:</p>
       
-      <ul>
-        <li><strong>Usuario Cliente:</strong> Puede realizar un CRUD sobre su carrito, modificar sus datos de perfil y gestionar su historial de compras con validación de seguridad bancaria[cite: 1, 12, 86].</li>
-        <li><strong>Usuario Administrador:</strong> Tiene acceso al <strong>Panel de Reposición (Restock)</strong> para gestionar el inventario, abrir cajas para generar sobres o ejecutar un sistema de "Gacha" para cartas individuales[cite: 26, 83, 92].</li>
+      <ul style="line-height: 1.8;">
+        <li><strong>Arquitectura de Persistencia:</strong> Implementar herencia de tablas (JOINED strategy) para gestionar de forma eficiente entidades complejas como cartas individuales, sobres y cajas selladas.</li>
+        <li><strong>Seguridad y Perfiles:</strong> Diferenciar roles de acceso mediante controladores específicos, permitiendo al administrador ejecutar operaciones críticas de <strong>Restock</strong> y al cliente gestionar su cartera de activos y carrito dinámico.</li>
+        <li><strong>Mecánicas de Conversión:</strong> Desarrollar un motor de lógica de negocio que permita la transformación de productos (apertura de Booster Boxes en Packs) manteniendo la integridad referencial del stock.</li>
+        <li><strong>UX/UI Avanzada:</strong> Utilizar <strong>JavaFX</strong> para proporcionar una interfaz reactiva con sistemas de filtrado multivariable (por rareza, juego o precio).</li>
       </ul>
-      
-      <p>Los filtros y consultas se realizan mediante queries optimizadas para obtener listados fáciles de leer, permitiendo que tanto el administrador como el cliente final tengan siempre una visión clara del estado del stock[cite: 48, 58, 61, 74].</p>
     </section>
   </div>
 </main>
