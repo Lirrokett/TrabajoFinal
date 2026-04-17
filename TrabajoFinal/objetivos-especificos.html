@@ -10,9 +10,7 @@
 <header>
   <div class="container">
     <nav class="navbar">
-      <div class="brand">
-        <a href="index.html">Grupo 2</a>
-      </div>
+      <div class="brand"><a href="index.html">Grupo 2</a></div>
       <div class="nav-actions">
         <a class="btn" href="index.html">Inicio</a>
         <div class="dropdown">
@@ -22,14 +20,6 @@
             <a href="origen.html">2. Origen y contextualización</a>
             <a href="objetivo-general.html">3. Objetivo general</a>
             <a href="objetivos-especificos.html">4. Objetivos específicos</a>
-            <a href="tareas.html">5. Tareas</a>
-            <a href="recursos-humanos.html">6. Recursos humanos</a>
-            <a href="recursos-materiales.html">7. Recursos materiales</a>
-            <a href="cronograma.html">8. Cronograma</a>
-            <a href="presupuesto.html">9. Presupuesto</a>
-            <a href="seguimiento-evaluacion.html">10. Seguimiento y evaluación</a>
-            <a href="anexos-documentacion-tecnica.html">11. Anexos: Documentación técnica</a>
-            <a href="bibliografia.html">12. Bibliografía</a>
           </div>
         </div>
       </div>
@@ -40,13 +30,14 @@
   <div class="container">
     <section class="card">
       <h1>4. Objetivos específicos</h1>
+      <p>Nuestro proyecto se basa en una base de datos relacional con una interfaz gráfica intuitiva desarrollada en <strong>JavaFX</strong>[cite: 1, 31, 48]. En la aplicación existen dos niveles de acceso diferenciados:</p>
+      
       <ul>
-        <li><strong>Seguridad:</strong> Diseñar un módulo de autenticación que gestione sesiones y garantice la integridad de las credenciales mediante la validación de roles.</li>
-        <li><strong>Interfaz (UX/UI):</strong> Desarrollar un catálogo interactivo con capacidades de filtrado avanzado y persistencia para la gestión del carrito de compras.</li>
-        <li><strong>Administración:</strong> Proveer herramientas de nivel administrativo para la manipulación CRUD del inventario y la supervisión de cuentas de usuario.</li>
-        <li><strong>Navegación:</strong> Estructurar un flujo de ventanas lógico basado en grafos de estado que asegure la usabilidad y minimice la latencia operativa.</li>
-        <li><strong>Gobernanza de datos:</strong> Habilitar protocolos para que los usuarios ejerzan sus derechos de modificación y supresión de datos personales.</li>
+        <li><strong>Usuario Cliente:</strong> Puede realizar un CRUD sobre su carrito, modificar sus datos de perfil y gestionar su historial de compras con validación de seguridad bancaria[cite: 1, 12, 86].</li>
+        <li><strong>Usuario Administrador:</strong> Tiene acceso al <strong>Panel de Reposición (Restock)</strong> para gestionar el inventario, abrir cajas para generar sobres o ejecutar un sistema de "Gacha" para cartas individuales[cite: 26, 83, 92].</li>
       </ul>
+      
+      <p>Los filtros y consultas se realizan mediante queries optimizadas para obtener listados fáciles de leer, permitiendo que tanto el administrador como el cliente final tengan siempre una visión clara del estado del stock[cite: 48, 58, 61, 74].</p>
     </section>
   </div>
 </main>
